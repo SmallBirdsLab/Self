@@ -42,14 +42,14 @@ void main(){
 		T[len] = (BTNode*)malloc(sizeof(BTNode));
 		T[len]->data = ch;
 	}
-	for( i = 2 * len; i >= 0 ; i--) // 找到子节点，下标len到2*len为NULL
+	for( i = 2 * len; i >= 0 ; i--) 
     {
-        if(i < len)
+        if(i < len) // 找到下标下标0到len-1的节点的子节点，
         {
                 T[i]->lchild = T[2 * i + 1];
                 T[i]->rchild = T[2 * i + 2];
         }
-        else
+        else       //下标len到2*len就全为NULL了
                 T[i] = NULL;
     }
 	printf("\n中序遍历二叉树的非递归算法：\n");
