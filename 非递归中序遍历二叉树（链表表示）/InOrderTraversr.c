@@ -1,3 +1,4 @@
+/*在上面树的基础上，中序遍历二叉树的非递归算法，栈写的非常简单*/
 #include<stdio.h>
 #include<stdlib.h>
 #define max 100
