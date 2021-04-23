@@ -1,3 +1,4 @@
+/*顺序存储一个满二叉树，并按照三种方式遍历树*/
 #include<stdio.h>
 #include<stdlib.h>
 #define max 100
