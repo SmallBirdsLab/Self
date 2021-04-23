@@ -43,15 +43,15 @@ void main(){
 		T[len]->data = ch;
 	}
 	for( i = 2 * len; i >= 0 ; i--) // 找到子节点，下标len到2*len为NULL
-    {
-        if(i < len)
-        {
-            T[i]->lchild = T[2 * i + 1];
-            T[i]->rchild = T[2 * i + 2];
-        }
-        else
-            T[i] = NULL;
-    }
+    	{
+        	if(i < len)
+        	{
+            		T[i]->lchild = T[2 * i + 1];
+            		T[i]->rchild = T[2 * i + 2];
+        	}
+        	else
+            		T[i] = NULL;
+    	}
 	printf("\n中序遍历二叉树的非递归算法：\n");
 	InOrderTraversr(T[0]);
 }
