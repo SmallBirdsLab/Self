@@ -3,9 +3,10 @@
 #include<stdlib.h>
 #define max 100
 
+//二叉树的二叉链表存储表示
 typedef struct BTNode{
-	char data;
-	struct BTNode *lchild, *rchild;
+	char data;                      //结点数据域
+	struct BTNode *lchild, *rchild; //左右孩子指针
 }BTNode,*BTree;
 
 void preorder(BTree root) // 先序遍历
