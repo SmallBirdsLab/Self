@@ -15,7 +15,7 @@ void InOrderTraversr(BTree root)
     BTNode *p = root;
     BTree S[max];     // 一个非常简单，容量为max的栈
     int top = 0;      // 栈顶的下标
-    while(p || top
+    while(p || top)
     {
         if(p)
         {
